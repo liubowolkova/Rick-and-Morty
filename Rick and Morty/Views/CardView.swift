@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CardView: View {
+    let character: Character
+    
     var body: some View {
         HStack(alignment: .top, spacing: 10.0){
             VStack{
@@ -16,15 +18,15 @@ struct CardView: View {
                     .scaledToFit()
                     .background(AppColor.unknown)
                     .padding(.top, 5)
-                CharacterStatusView(status: "Alive", type: "Alien")
+                CharacterStatusView(status: character.status, type: character.type)
             }
             VStack{
-                Text("Character Name")
+                Text(character.name)
                     .font(.title)
                     .foregroundColor(AppColor.contentDark)
                     .bold()
-                InfoView(description: "Last known location:", information: "Earth (E-A500)")
-                InfoView(description: "First seen in:", information: "Get Schwifty")
+                InfoView(description: "Last known location:", information: character.lastLocation)
+                InfoView(description: "First seen in:", information: character.firstEpisode)
             }
         }
         .padding()
@@ -38,6 +40,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(character: Character(name: "Character Name", status: "Status", type: "Type", lastLocation: "Location", firstEpisode: "Episode"))
     }
 }

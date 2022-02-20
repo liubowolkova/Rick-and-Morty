@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ShowView: View {
+    @StateObject var show = ShowViewModel()
+    var cardViews: [CardView] = []
+    
     var body: some View {
         ScrollView{
             TopLogoView()
-            ForEach(1..<5) { _ in
-                CardView()
+            ForEach(0..<show.countOfCharacters) { index in
+                CardView(character: show.characters[index])
             }
         }
     }

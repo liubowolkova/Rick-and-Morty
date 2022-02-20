@@ -15,9 +15,11 @@ struct InfoView: View {
             Spacer()
             VStack(alignment: .leading){
                 Text(description)
+                    .fixedSize(horizontal: false, vertical: true)
                     .foregroundColor(AppColor.description)
                     .padding(.vertical, 5)
                 Text(information)
+                    .fixedSize(horizontal: false, vertical: true)
                     .foregroundColor(AppColor.contentLight)
                     .padding(.bottom, 5)
             }
