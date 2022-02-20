@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LaunchView: View {
+struct WelcomeView: View {
     var body: some View {
         NavigationView {
             VStack {
@@ -19,10 +19,6 @@ struct LaunchView: View {
                     .font(.body)
                     .padding(
                         .bottom)
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.horizontal)
                 NavigationLink(
                     destination: ShowView(),
                     label: {
@@ -37,6 +33,10 @@ struct LaunchView: View {
                         Capsule(style: .continuous)
                             .stroke(Color.green, lineWidth: 4)
                     )
+                Image("img")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.top)
             }
         }
     }
@@ -44,6 +44,6 @@ struct LaunchView: View {
 
 struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchView()
+        WelcomeView()
     }
 }

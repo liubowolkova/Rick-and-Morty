@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		52309E9D27BFA9CB00F11A3F /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52309E9C27BFA9CB00F11A3F /* ShowView.swift */; };
 		5266CAFB27C26DB400F7488C /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5266CAFA27C26DB400F7488C /* ShowViewModel.swift */; };
+		5266CAFF27C2C2D500F7488C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5266CAFE27C2C2D500F7488C /* Launch Screen.storyboard */; };
 		5282D7EF27BFC40D00CE0411 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282D7EE27BFC40D00CE0411 /* Character.swift */; };
 		5282D7F127BFC89100CE0411 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282D7F027BFC89100CE0411 /* Show.swift */; };
 		52B0AF3127BD88380034F403 /* Rick_and_MortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B0AF3027BD88380034F403 /* Rick_and_MortyApp.swift */; };
 		52B0AF3527BD883C0034F403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B0AF3427BD883C0034F403 /* Assets.xcassets */; };
 		52B0AF3827BD883C0034F403 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B0AF3727BD883C0034F403 /* Preview Assets.xcassets */; };
-		52B0AF4027BD88D30034F403 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B0AF3F27BD88D30034F403 /* LaunchView.swift */; };
+		52B0AF4027BD88D30034F403 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B0AF3F27BD88D30034F403 /* WelcomeView.swift */; };
 		52B0AF4227BD8E640034F403 /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B0AF4127BD8E640034F403 /* TopLogoView.swift */; };
 		52B0AF4427BD8F630034F403 /* CharacterStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B0AF4327BD8F630034F403 /* CharacterStatusView.swift */; };
 		52B0AF4627BD90360034F403 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B0AF4527BD90360034F403 /* AppColor.swift */; };
@@ -25,13 +26,15 @@
 /* Begin PBXFileReference section */
 		52309E9C27BFA9CB00F11A3F /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
 		5266CAFA27C26DB400F7488C /* ShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewModel.swift; sourceTree = "<group>"; };
+		5266CAFD27C2C06A00F7488C /* Rick-and-Morty-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Rick-and-Morty-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5266CAFE27C2C2D500F7488C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5282D7EE27BFC40D00CE0411 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5282D7F027BFC89100CE0411 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		52B0AF2D27BD88380034F403 /* Rick and Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick and Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B0AF3027BD88380034F403 /* Rick_and_MortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_and_MortyApp.swift; sourceTree = "<group>"; };
 		52B0AF3427BD883C0034F403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B0AF3727BD883C0034F403 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52B0AF3F27BD88D30034F403 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		52B0AF3F27BD88D30034F403 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		52B0AF4127BD8E640034F403 /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
 		52B0AF4327BD8F630034F403 /* CharacterStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatusView.swift; sourceTree = "<group>"; };
 		52B0AF4527BD90360034F403 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
@@ -86,12 +89,14 @@
 		52B0AF2F27BD88380034F403 /* Rick and Morty */ = {
 			isa = PBXGroup;
 			children = (
+				5266CAFD27C2C06A00F7488C /* Rick-and-Morty-Info.plist */,
 				5282D7ED27BFC3DE00CE0411 /* Models */,
 				5282D7EA27BFC2D800CE0411 /* ViewModels */,
 				52B0AF3E27BD885F0034F403 /* Views */,
 				52B0AF3027BD88380034F403 /* Rick_and_MortyApp.swift */,
 				52B0AF3427BD883C0034F403 /* Assets.xcassets */,
 				52B0AF3627BD883C0034F403 /* Preview Content */,
+				5266CAFE27C2C2D500F7488C /* Launch Screen.storyboard */,
 			);
 			path = "Rick and Morty";
 			sourceTree = "<group>";
@@ -107,7 +112,7 @@
 		52B0AF3E27BD885F0034F403 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				52B0AF3F27BD88D30034F403 /* LaunchView.swift */,
+				52B0AF3F27BD88D30034F403 /* WelcomeView.swift */,
 				52B0AF4127BD8E640034F403 /* TopLogoView.swift */,
 				52B0AF4327BD8F630034F403 /* CharacterStatusView.swift */,
 				52B0AF4527BD90360034F403 /* AppColor.swift */,
@@ -176,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5266CAFF27C2C2D500F7488C /* Launch Screen.storyboard in Resources */,
 				52B0AF3827BD883C0034F403 /* Preview Assets.xcassets in Resources */,
 				52B0AF3527BD883C0034F403 /* Assets.xcassets in Resources */,
 			);
@@ -192,7 +198,7 @@
 				52B0AF4427BD8F630034F403 /* CharacterStatusView.swift in Sources */,
 				5282D7EF27BFC40D00CE0411 /* Character.swift in Sources */,
 				5266CAFB27C26DB400F7488C /* ShowViewModel.swift in Sources */,
-				52B0AF4027BD88D30034F403 /* LaunchView.swift in Sources */,
+				52B0AF4027BD88D30034F403 /* WelcomeView.swift in Sources */,
 				5282D7F127BFC89100CE0411 /* Show.swift in Sources */,
 				52B0AF3127BD88380034F403 /* Rick_and_MortyApp.swift in Sources */,
 				52B0AF4227BD8E640034F403 /* TopLogoView.swift in Sources */,
@@ -332,9 +338,11 @@
 				DEVELOPMENT_TEAM = C9KXM95PQS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rick-and-Morty-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,9 +369,11 @@
 				DEVELOPMENT_TEAM = C9KXM95PQS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rick-and-Morty-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
